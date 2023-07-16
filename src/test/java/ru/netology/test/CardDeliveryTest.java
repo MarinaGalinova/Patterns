@@ -4,8 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-//import ru.netology.DataGenerator;
 import ru.netology.data.DataGenerator;
+
 
 import java.time.Duration;
 
@@ -54,6 +54,7 @@ class CardDeliveryTest {
         $("[data-test-id= 'success-notification'] notification__content")
                 .shouldHave(exactText("Встреча успешно запланирована на " + secondMeetingDate))
                 .shouldBe(visible);
+
     }
 }
 
